@@ -21,30 +21,49 @@
 
 // 1 <= numRows <= 30
 
-class Pascal's_Triangle {
-    public List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> nelist = new ArrayList();
-        List<Integer> Row = new ArrayList();
-        
-        for(int i = 0 ;i < numRows ; i++){
-            if(i==0){
-                Row.add(1);
-            }
-            else{
-                Row.add(1);
-                Row.add(1);
-            }
-            Row.add(1);
-            nelist.add(Row);
-            Row.clear();
-        }
+import java.util.*;
 
+class Pascals_Triangle {
+        public static void main(String[] args) {
+            int numRows = 5;
 
-        for(List<Integer> i : nelist ){
-            for(Integer j:i){
-                System.out.println(j);
+            List<List<Integer>> nelist = new ArrayList();
+            
+            for(int i = 0 ;i < numRows ; i++){
+            List<Integer> Row = new ArrayList();
+                if(i==0){
+                    Row.add(1);
+                }
+                else{
+                    Row.add(1);
+                    for(int h=0; h<i-1; h++){
+                        Integer let = nelist.get(i-1).get(h)+(nelist.get(i-1)).get(h+1);
+                        Row.add(let);
+                    }
+                    Row.add(1);
+                }
+               nelist.add(Row);
+            }
+    
+    
+            for(List<Integer> i : nelist ){
+                for(int j:i){
+                    System.out.print(j);
+                }
+                System.out.println("");
             }
         }
-        return nelist;
-    }
+    
 }
+
+// Sample input 
+
+// 5
+
+// sample OutPut
+
+// 1
+// 11
+// 121
+// 1331
+// 14641
