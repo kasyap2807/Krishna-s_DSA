@@ -1,7 +1,7 @@
 
 # Striver's Dsa Sheet
 
-## !(Follower Link)[https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems]
+## ![Follower Link](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems)
 Completed :
 
 i! Updates Every Week
