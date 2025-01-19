@@ -5,7 +5,7 @@
 
 Completed :
 
-i! Updates Every Week
+Note: Updates Every Week
 
 ## Arrya
 
